@@ -1,0 +1,82 @@
+opencdk
+------------------------------------------
+The purpose of OpenCDK is to handle and understand OpenPGP packets 
+and to use basic operations. For example to encrypt/decrypt or to 
+sign/verify and packet routines.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libgcrypt11-1.2.4-1
+  zlib-1.2.3-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.gnu.org/software/gnutls/
+
+Canonical download:
+  ftp://ftp.gnutls.org/pub/gnutls/opencdk/
+
+-------------------------------------------
+
+Build instructions:
+  unpack opencdk-0.5.13-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./opencdk-0.5.13-X.cygport all
+
+This will create:
+  /usr/src/opencdk-0.5.13-X-src.tar.bz2
+
+  /usr/src/libopencdk-devel-0.5.13-X.tar.bz2
+  /usr/src/libopencdk8-0.5.13-X.tar.bz2
+  /usr/src/opencdk-0.5.13-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(opencdk)
+  /usr/share/doc/Cygwin/opencdk-0.5.13.README
+  /usr/share/doc/opencdk-0.5.13/AUTHORS
+  /usr/share/doc/opencdk-0.5.13/COPYING
+  /usr/share/doc/opencdk-0.5.13/ChangeLog
+  /usr/share/doc/opencdk-0.5.13/INSTALL
+  /usr/share/doc/opencdk-0.5.13/NEWS
+  /usr/share/doc/opencdk-0.5.13/README
+  /usr/share/doc/opencdk-0.5.13/THANKS
+  /usr/share/doc/opencdk-0.5.13/TODO
+
+(libopencdk8)
+  /usr/bin/cygopencdk-8.dll
+
+(libopencdk-devel)
+  /usr/bin/opencdk-config
+  /usr/include/opencdk.h
+  /usr/lib/libopencdk.a
+  /usr/lib/libopencdk.dll.a
+  /usr/lib/libopencdk.la
+  /usr/lib/pkgconfig/opencdk.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.5.13-1 -----
+Version bump.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

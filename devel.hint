@@ -1,0 +1,7 @@
+category: Libs
+requires: cygwin libgcrypt-devel zlib
+external-source: opencdk
+sdesc: "Open Crypto Development Kit (development)"
+ldesc: "The purpose of OpenCDK is to handle and understand OpenPGP 
+packets and to use basic operations. For example to encrypt/decrypt or 
+to sign/verify and packet routines."
