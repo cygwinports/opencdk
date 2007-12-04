@@ -13,13 +13,14 @@ Build requirements:
 (besides corresponding -devel packages)
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
+  automake1.10-1.10-1
   binutils-20060817-1
-  cygport-0.2.11-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   libtool1.5-1.5.23a-2
   make-3.81-1
+  pkg-config-0.21-1
   sed-4.1.5-2
 
 Canonical website:
@@ -31,36 +32,36 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack opencdk-0.5.13-X-src.tar.bz2
+  unpack opencdk-0.6.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./opencdk-0.5.13-X.cygport all
+  cygport ./opencdk-0.6.6-X.cygport all
 
 This will create:
-  /usr/src/opencdk-0.5.13-X-src.tar.bz2
+  /usr/src/opencdk-0.6.6-X-src.tar.bz2
 
-  /usr/src/libopencdk-devel-0.5.13-X.tar.bz2
-  /usr/src/libopencdk8-0.5.13-X.tar.bz2
-  /usr/src/opencdk-0.5.13-X.tar.bz2
+  /usr/src/libopencdk-devel-0.6.6-X.tar.bz2
+  /usr/src/libopencdk10-0.6.6-X.tar.bz2
+  /usr/src/opencdk-0.6.6-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
 (opencdk)
-  /usr/share/doc/Cygwin/opencdk-0.5.13.README
-  /usr/share/doc/opencdk-0.5.13/AUTHORS
-  /usr/share/doc/opencdk-0.5.13/COPYING
-  /usr/share/doc/opencdk-0.5.13/ChangeLog
-  /usr/share/doc/opencdk-0.5.13/INSTALL
-  /usr/share/doc/opencdk-0.5.13/NEWS
-  /usr/share/doc/opencdk-0.5.13/README
-  /usr/share/doc/opencdk-0.5.13/THANKS
-  /usr/share/doc/opencdk-0.5.13/TODO
+  /usr/share/doc/Cygwin/opencdk-0.6.6.README
+  /usr/share/doc/opencdk-0.6.6/AUTHORS
+  /usr/share/doc/opencdk-0.6.6/COPYING
+  /usr/share/doc/opencdk-0.6.6/ChangeLog
+  /usr/share/doc/opencdk-0.6.6/INSTALL
+  /usr/share/doc/opencdk-0.6.6/NEWS
+  /usr/share/doc/opencdk-0.6.6/README
+  /usr/share/doc/opencdk-0.6.6/THANKS
+  /usr/share/doc/opencdk-0.6.6/TODO
 
-(libopencdk8)
-  /usr/bin/cygopencdk-8.dll
+(libopencdk10)
+  /usr/bin/cygopencdk-10.dll
 
 (libopencdk-devel)
   /usr/bin/opencdk-config
@@ -73,6 +74,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.6.6-1 -----
+ABI version bump.
 
 ----- version 0.5.13-1 -----
 Version bump.

@@ -1,5 +1,5 @@
 category: Libs
-requires: libopencdk8 libopencdk-devel
+requires: libopencdk10 libopencdk-devel
 sdesc: "Open Crypto Development Kit (meta-package)"
 ldesc: "The purpose of OpenCDK is to handle and understand OpenPGP 
 packets and to use basic operations. For example to encrypt/decrypt or 

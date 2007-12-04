@@ -1,0 +1,23 @@
+DESCRIPTION="Open Crypto Development Kit"
+HOMEPAGE="http://www.gnu.org/software/gnutls/"
+SRC_URI="ftp://ftp.gnutls.org/pub/gnutls/${PN}/${P}.tar.bz2"
+#		 ftp://ftp.gnutls.org/pub/gnutls/${PN}/${P}.tar.bz2.sig"
+
+abi=10
+PKG_NAMES="${PN} lib${PN}${abi} lib${PN}-devel"
+PKG_HINTS='setup lib devel'
+PKG_CONTENTS[0]='usr/share/'
+PKG_CONTENTS[1]="usr/bin/*-${abi}.dll"
+PKG_CONTENTS[2]='usr/bin/*-config usr/include/ usr/lib/'
+
+DIFF_EXCLUDES="libtool.m4 opencdk.h"
+
+src_compile() {
+	cd ${S}
+	rm -f m4/libtool.m4
+	cygautoreconf
+
+	cd ${B}
+	cygconf
+	cygmake
+}
