@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libgcrypt11 zlib
+requires: libgcrypt11 zlib
 external-source: opencdk
 sdesc: "Open Crypto Development Kit (runtime)"
 ldesc: "The purpose of OpenCDK is to handle and understand OpenPGP 
